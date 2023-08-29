@@ -1,0 +1,5 @@
+# batteryreport
+
+```shell
+powercfg /batteryreport
+```
