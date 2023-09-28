@@ -67,6 +67,7 @@ git reset –hard <commit_id>
 
 ```shell
 git diff 608e120 4abe32e --name-only
+git archive -o update.zip HEAD $(git diff --name-only 608e120 4abe32e)
 git diff 608e120 4abe32e --name-only | xargs zip update.zip
 ```
 
@@ -118,7 +119,7 @@ git branch -d <branch_name>
 git merge 被合并的分支名
 ```
 
-### 从主分支合并 (解决冲突)
+### 从主分支合并
 
 ```shell
 git checkout main
