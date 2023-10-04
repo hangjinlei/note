@@ -15,11 +15,6 @@
         "vscode": {
             "extensions": [
                 // Microsoft
-                "ms-dotnettools.csdevkit",
-                "ms-dotnettools.vscode-dotnet-pack",
-                "ms-dotnettools.vscode-dotnet-runtime",
-                "ms-dotnettools.vscodeintellicode-csharp",
-                "ms-vscode.azure-repos",
                 "ms-vscode.live-server",
                 "ms-vscode-remote.vscode-remote-extensionpack",
                 "ms-vscode.remote-explorer",
@@ -52,12 +47,7 @@
                 // Others
                 "vsls-contrib.codetour",
                 "streetsidesoftware.code-spell-checker",
-                "vscode-icons-team.vscode-icons",
-                "wayou.vscode-todo-highlight",
-                "rangav.vscode-thunder-client",
-                "alexcvzz.vscode-sqlite",
-                "qwtel.sqlite-viewer",
-                "mechatroner.rainbow-csv"
+                "vscode-icons-team.vscode-icons"
             ],
             "settings": {
                 "diffEditor.renderSideBySide": false,
