@@ -1,19 +1,31 @@
 # Others
 
+## Flutter
+
+```json
+{
+  "extensions": [
+    // Flutter
+    "Dart-Code.dart-code",
+    "Dart-Code.flutter"
+  ]
+}
+```
+
 ## Python
 
 ```json
 {
-    "extensions": [
-        // Python
-        // "donjayamanne.python-extension-pack"
-        "donjayamanne.python-environment-manager",
-        "kevinrose.vsc-python-indent",
-        "ms-python.pylint",
-        "ms-python.python",
-        // "ms-python.vscode-pylance",
-        "njpwerner.autodocstring"
-    ]
+  "extensions": [
+    // Python
+    // "donjayamanne.python-extension-pack"
+    "donjayamanne.python-environment-manager",
+    "kevinrose.vsc-python-indent",
+    "ms-python.pylint",
+    "ms-python.python",
+    // "ms-python.vscode-pylance",
+    "njpwerner.autodocstring"
+  ]
 }
 ```
 
@@ -21,7 +33,7 @@
 
 ```json
 {
-    "extensions": ["ms-vscode.cpptools"]
+  "extensions": ["ms-vscode.cpptools"]
 }
 ```
 
@@ -29,10 +41,10 @@
 
 ```json
 {
-    "extensions": [
-        // MSSQL
-        "ms-mssql.mssql"
-    ]
+  "extensions": [
+    // MSSQL
+    "ms-mssql.mssql"
+  ]
 }
 ```
 
@@ -40,12 +52,12 @@
 
 ```json
 {
-    "extensions": [
-        "dbaeumer.vscode-eslint",
-        "formulahendry.auto-complete-tag",
-        "ritwickdey.liveserver",
-        "steoates.autoimport"
-    ]
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "formulahendry.auto-complete-tag",
+    "ritwickdey.liveserver",
+    "steoates.autoimport"
+  ]
 }
 ```
 
@@ -53,7 +65,7 @@
 
 ```json
 {
-    "extensions": ["angular.ng-template", "johnpapa.angular2"]
+  "extensions": ["angular.ng-template", "johnpapa.angular2"]
 }
 ```
 
@@ -61,13 +73,13 @@
 
 ```json
 {
-    "extensions": [
-        "hollowtree.vue-snippets",
-        "octref.vetur",
-        "sdras.vue-vscode-snippets",
-        "vue.volar",
-        "vue.vscode-typescript-vue-plugin"
-    ]
+  "extensions": [
+    "hollowtree.vue-snippets",
+    "octref.vetur",
+    "sdras.vue-vscode-snippets",
+    "vue.volar",
+    "vue.vscode-typescript-vue-plugin"
+  ]
 }
 ```
 
@@ -75,18 +87,18 @@
 
 ```json
 {
-    "extensions": [
-        "castwide.ruby-debug",
-        "castwide.solargraph",
-        "hridoy.rails-snippets",
-        "jnbt.vscode-rufo",
-        "manuelpuyol.erb-linter",
-        "mbessey.vscode-rufo",
-        "shopify.ruby-extensions-pack",
-        "thadeu.vscode-run-rspec-file",
-        "vortizhe.simple-ruby-erb",
-        "wingrunr21.vscode-ruby"
-    ]
+  "extensions": [
+    "castwide.ruby-debug",
+    "castwide.solargraph",
+    "hridoy.rails-snippets",
+    "jnbt.vscode-rufo",
+    "manuelpuyol.erb-linter",
+    "mbessey.vscode-rufo",
+    "shopify.ruby-extensions-pack",
+    "thadeu.vscode-run-rspec-file",
+    "vortizhe.simple-ruby-erb",
+    "wingrunr21.vscode-ruby"
+  ]
 }
 ```
 
@@ -94,6 +106,6 @@
 
 ```json
 {
-    "extensions": ["chandzhang.wechat-snippet", "seancheung.wxapp-helper"]
+  "extensions": ["chandzhang.wechat-snippet", "seancheung.wxapp-helper"]
 }
 ```
