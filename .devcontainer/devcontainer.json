@@ -41,11 +41,8 @@
                 "editorconfig.editorconfig",
                 "esbenp.prettier-vscode",
                 // Markdown
-                // "bierner.github-markdown-preview", // GitHub Markdown Preview Pack
                 "yzhang.markdown-all-in-one",
-                "shd101wyy.markdown-preview-enhanced",
                 // Others
-                "vsls-contrib.codetour",
                 "streetsidesoftware.code-spell-checker",
                 "vscode-icons-team.vscode-icons"
             ],
