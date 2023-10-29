@@ -1,10 +1,24 @@
-# 用户定义的显式和隐式转换运算符
+# Code snippets
 
-https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/user-defined-conversion-operators
+## GB2312 to UTF 8
 
 ```csharp
-using System;
+using (StreamReader sr = new StreamReader(infile, Encoding.GetEncoding(936)))
+{
+    using (StreamWriter sw = new StreamWriter(outfile, false, Encoding.UTF8))
+    {
+        sw.Write(sr.ReadToEnd());
+        sw.Close();
+    }
+    sr.Close();
+}
+```
 
+## 用户定义的显式和隐式转换运算符
+
+[Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/user-defined-conversion-operators)
+
+```csharp
 public readonly struct Digit
 {
     private readonly byte digit;
