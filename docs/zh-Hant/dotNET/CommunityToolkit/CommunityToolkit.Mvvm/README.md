@@ -1,3 +1,10 @@
+# CommunityToolkit.Mvvm
+
+## Code snippets
+
+### BaseViewModel
+
+```csharp
 [ObservableObject]
 public partial class BaseViewModel // : ObservableObject
 {
@@ -10,3 +17,9 @@ public partial class BaseViewModel // : ObservableObject
 
     public bool IsNotBusy => !IsBusy;
 }
+```
+
+## References
+
+-   [GitHub](https://github.com/CommunityToolkit/dotnet)
+-   [Docs](https://docs.microsoft.com/zh-cn/dotnet/communitytoolkit/)

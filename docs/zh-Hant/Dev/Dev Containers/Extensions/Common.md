@@ -26,6 +26,7 @@
         "github.copilot-chat",
         "github.copilot-labs",
         "github.github-vscode-theme",
+        "github.vscode-github-actions",
         "github.vscode-pull-request-github",
         "github.remotehub",
         // Git
