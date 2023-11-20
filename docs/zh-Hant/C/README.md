@@ -1,6 +1,8 @@
-# Basic of C Programing Language
+# Basic of C Programming Language
 
 ## Data Types
+
+[Microsoft Learn - C Type Specifiers](https://learn.microsoft.com/en-us/cpp/c-language/c-type-specifiers)
 
 ```c
 int b = 23;
@@ -10,20 +12,13 @@ char d = 'A';
 
 char name[] = "timothy liu"; // string
 int nums[] = {1, 2, 3}; // array
-```
 
-### const
-
-```c
-const int NUM = 10;
-NUM = 11; /* can not be modify */
+const int NUM = 10; /* can not be modify */
 ```
 
 ## Output and Input
 
-### output
-
-printf
+### `printf`
 
 ```c
 printf("%s %d %f","Timothy", "10", "10.0");
@@ -43,9 +38,7 @@ printf("%s %d %f","Timothy", "10", "10.0");
 printf("%-10.2f", 11.1111);
 ```
 
-### input
-
-scanf
+### `scanf`
 
 ```c
 int age;
@@ -77,7 +70,7 @@ scanf_s("%d", &age);
 > printf("Your name is %s %s", firstName, lastName);
 > ```
 
-fgets
+### `fgets`
 
 ```c
 printf("Enter your name: ");
@@ -95,3 +88,10 @@ printf("Welcome %s\n", name);
 在 C 语言中，函数原型（function prototype）是在使用函数之前提供的函数声明，它描述了函数的名称、返回类型以及参数的类型和顺序。函数原型的目的是告诉编译器有关函数的信息，以便在函数被调用之前对其进行正确的类型检查。
 
 函数原型通常位于函数定义之前，可以单独声明函数原型，也可以与函数定义结合在一起。函数原型的一般形式如下：
+
+## Mathematic
+
+-   `pow`
+-   `sqrt`
+-   `seil`
+-   `floor`
