@@ -1,4 +1,4 @@
-# Code snippets
+# Extensions
 
 ## 在 .NET App 中使用 GB2312
 

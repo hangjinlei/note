@@ -36,12 +36,14 @@ Command Line arguments
 dotnet ./app.dll --urls="http://*:80"
 ```
 
-## Dependency Injection
+## 特殊的依赖注入
 
 -   [IHttpContextAccessor](https://docs.microsoft.com/zh-cn/dotnet/api/microsoft.aspnetcore.http.ihttpcontextaccessor)
-    -   [HttpContext](https://docs.microsoft.com/zh-cn/dotnet/api/microsoft.aspnetcore.http.httpcontext)
+-   IRazorViewEngine
+-   ITempDataProvider
+-   IActionContextAccessor
 
-## References
+## 高级内容
 
 -   [在 ASP.NET Core 中强制使用 HTTPS](https://learn.microsoft.com/zh-cn/aspnet/core/security/enforcing-ssl)
--   [ASP.NET Core 中的模型绑定](https://learn.microsoft.com/zh-cn/aspnet/core/mvc/models/model-binding)
+-   [ASP.NET Core 中的模型绑定](https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding)
