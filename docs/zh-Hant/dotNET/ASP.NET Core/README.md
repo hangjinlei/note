@@ -47,3 +47,5 @@ dotnet ./app.dll --urls="http://*:80"
 
 -   [在 ASP.NET Core 中强制使用 HTTPS](https://learn.microsoft.com/zh-cn/aspnet/core/security/enforcing-ssl)
 -   [ASP.NET Core 中的模型绑定](https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding)
+-   [Custom Model Binding in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/mvc/advanced/custom-model-binding)
+-   [Model validation in ASP.NET Core MVC and Razor Pages](https://learn.microsoft.com/en-us/aspnet/core/mvc/models/validation)
