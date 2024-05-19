@@ -93,13 +93,8 @@
         "Dart-Code.dart-code",
         "Dart-Code.flutter",
         // Python
-        // "donjayamanne.python-extension-pack"
-        "donjayamanne.python-environment-manager",
-        "kevinrose.vsc-python-indent",
-        "ms-python.pylint",
+        "ms-python.black-formatter",
         "ms-python.python",
-        // "ms-python.vscode-pylance",
-        "njpwerner.autodocstring",
         // C
         "ms-vscode.cpptools",
         // MSSQL

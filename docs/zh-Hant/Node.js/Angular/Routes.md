@@ -6,23 +6,23 @@
 
 ```typescript
 const routes: Routes = [
-  { path: "", redirectTo: "/home", pathMatch: "full" },
-  { path: "home", component: homeComponent },
-  { path: "collect", component: collectComponent },
-  { path: "**", redirectTo: "/home", pathMatch: "full" },
+    { path: "", redirectTo: "/home", pathMatch: "full" },
+    { path: "home", component: homeComponent, title: "Home"},
+    { path: "collect", component: collectComponent, title: "Collect" },
+    { path: "**", component: PageNotFoundComponent, title: "Page Not Found" }
 ];
 ```
 
 ## 访问路由页面
 
-使用`[routerLink]="['./home']"`
+使用 `[routerLink]="['./home']"`
 
 ```html
 <a [routerLink]="['./home']">
-  <div [ngClass]="navItem">Home</div>
+    <div [ngClass]="navItem">Home</div>
 </a>
 <a [routerLink]="['./collect']">
-  <div [ngClass]="navItem">Collect</div>
+    <div [ngClass]="navItem">Collect</div>
 </a>
 ```
 
