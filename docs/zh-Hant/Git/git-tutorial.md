@@ -133,14 +133,28 @@ git push
 
 ### 使用代理
 
+https://stackoverflow.com/questions/6172719/escape-character-in-git-proxy-password
+
 ```shell
-git config --global https.proxy http://127.0.0.1:1080
-git config --global https.proxy https://127.0.0.1:1080
-git config --global http.proxy 'socks5://127.0.0.1:1080'
-git config --global https.proxy 'socks5://127.0.0.1:1080'
+git config --global https.proxy http://127.0.0.1:8080
+git config --global https.proxy https://127.0.0.1:8080
+git config --global http.proxy 'socks5://127.0.0.1:8080'
+git config --global https.proxy 'socks5://127.0.0.1:8080'
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+git config --global http.sslVerify false
 
 代理服务器需要鉴权配置
 git config --global https.proxy https://username:password@proxy.com:8080
+```
+
+密码中的特殊字符需要转义，转义字符如下：
+
+```plaintext
+! --> %21       # --> %23     $ --> %24     & --> %26     ' --> %27
+( --> %28       ) --> %29      * --> %2A     + --> %2B     , --> %2C 
+/ --> %2F      : --> %3A      ; --> %3B      = --> %3D     ? --> %3F 
+@ --> %40     [ --> %5B     ] --> %5D
 ```
 
 ### 取消代理
