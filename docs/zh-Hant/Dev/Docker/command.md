@@ -9,12 +9,13 @@
 
 ## image
 
-| Command                                 | 說明              |
-| :-------------------------------------- | :---------------- |
-| `docker image ls`                       | 列出所有 image    |
-| `docker image ls -q`                    | 列出所有 image id |
-| `docker image ls -f dangling=true`      | 列出虛擬鏡像      |
-| `docker image rm $(docker image ls -q)` | 刪除所有 image    |
+| Command                                            | 說明              |
+| :------------------------------------------------- | :---------------- |
+| `docker image ls`                                  | 列出所有 image    |
+| `docker image ls -q`                               | 列出所有 image id |
+| `docker image ls -f dangling=true`                 | 列出虛擬鏡像      |
+| `docker image rm $(docker image ls -q)`            | 刪除所有 image    |
+| `docker rmi $(docker image -f "dangling=true" -q)` |                   |
 
 ## container
 
