@@ -6,7 +6,7 @@ repo_name: hangjinlei/note
 theme:
     language: en
     name: material
-    logo: assets/logo.png
+    logo: assets/logo.jpg
     favicon: assets/favicon.ico
     icon:
         repo: fontawesome/brands/github
