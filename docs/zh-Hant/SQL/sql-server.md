@@ -10,6 +10,8 @@ EXEC sp_help 'dbo.mytable';
 
 ## 不信任的服务器证书
 
+https://learn.microsoft.com/en-us/troubleshoot/sql/database-engine/connect/certificate-chain-not-trusted
+
 Add `TrustServerCertificate=True` to the connection string.
 
 ```sql
