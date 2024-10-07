@@ -23,3 +23,7 @@ cp .\docs\index.html .\docs\404.html
 ```powershell
 New-Item .\docs\.nojekyll -ItemType File
 ```
+
+## Reference
+
+-   [Linkedin - Publish A Blazor Or Any Webapp On GitHub Pages For Free](https://www.linkedin.com/pulse/publish-blazor-any-webapp-github-pages-free-rikam-palkar/)
