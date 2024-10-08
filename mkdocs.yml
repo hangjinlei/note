@@ -125,7 +125,7 @@ plugins:
           type: date
           fallback_to_build_date: true
 copyright: >
-    Copyright &copy; 2022 - 2023 hangjinlei –
+    Copyright &copy; 2022 - 2024 hangjinlei –
     <a href="#__consent">Change cookie settings</a>
 
 markdown_extensions:
