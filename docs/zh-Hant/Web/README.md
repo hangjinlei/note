@@ -9,4 +9,6 @@
 
 ## Awesome [Blazor](https://aka.ms/blazor) UI Libraries
 
--   [MatBlazor](https://www.matblazor.com/)
+-   [MatBlazor Client](https://samprof.github.io/MatBlazor/)
+-   [MatBlazor Server](https://www.matblazor.com/)
+-   [MudBlazor](https://mudblazor.com/)
