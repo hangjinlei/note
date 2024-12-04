@@ -1,0 +1,150 @@
+site_name: hangjinlei's note
+site_url: https://hangjinlei.com/note
+repo_url: https://github.com/hangjinlei/note
+edit_uri: edit/main/docs/
+repo_name: hangjinlei/note
+theme:
+    language: en
+    name: material
+    logo: assets/logo.jpg
+    favicon: assets/favicon.ico
+    icon:
+        repo: fontawesome/brands/github
+        edit: material/pencil
+    features:
+        - navigation.instant
+        - navigation.tracking
+        - navigation.tabs
+        - navigation.tabs.sticky
+        # - navigation.sections
+        # - navigation.expand
+        - navigation.prune
+        # - navigation.indexes
+        - toc.follow
+        # - toc.integrate
+        - navigation.top
+        - search.suggest
+        - search.highlight
+        - search.share
+        # - header.autohide
+        # - announce.dismiss
+
+    palette:
+        # https://materialui.co/colors/
+
+        # Palette toggle for automatic mode
+        - media: "(prefers-color-scheme)"
+          scheme: auto
+          toggle:
+              icon: material/brightness-auto
+              name: Switch to light mode
+
+        # Palette toggle for light mode
+        - media: "(prefers-color-scheme: light)"
+          scheme: defaul
+          # primary: indigo
+          # accent: indigo
+          toggle:
+              icon: material/brightness-7
+              name: Switch to dark mode
+
+        # Palette toggle for dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          toggle:
+              icon: material/brightness-4
+              name: Switch to light mode
+
+    font:
+        # https://fonts.google.com/
+        text: Noto Sans JP
+        # code: Roboto Mono
+
+extra:
+    alternate:
+        # https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/#site-language
+        - name: English (United States)
+          link: /note/en-US/
+          lang: en
+        - name: Japanese (Japan)
+          link: /note/ja-JP/
+          lang: ja
+        - name: Chinese (Traditional)
+          link: /note/zh-Hant/
+          lang: zh-Hant
+    social:
+        - icon: fontawesome/solid/paper-plane
+          link: mailto:hangjinlei@live.cn
+          name: Email
+        - icon: fontawesome/brands/facebook
+          link: https://www.facebook.com/hangjinlei
+          name: hangjinlei on Facebook
+        - icon: fontawesome/brands/github
+          link: https://github.com/hangjinlei
+          name: hangjinlei on GitHub
+        - icon: fontawesome/brands/instagram
+          link: https://www.instagram.com/hangjinlei/
+          name: hangjinlei on Instagram
+        - icon: fontawesome/brands/linkedin
+          link: https://www.linkedin.com/in/hangjinlei
+          name: hangjinlei on LinkedIn
+        - icon: fontawesome/brands/twitter
+          link: https://twitter.com/hangjinlei
+          name: hangjinlei on Twitter
+    generator: false
+
+    consent:
+        title: Cookie consent
+        description: >-
+            We use cookies to recognize your repeated visits and preferences, as well
+            as to measure the effectiveness of our documentation and whether users
+            find what they're searching for. With your consent, you're helping us to
+            make our documentation better.
+        cookies:
+            analytics: Google Analytics
+            github: GitHub
+        actions:
+            - accept
+            - reject
+            - manage
+
+extra_css:
+    - stylesheets/extra.css
+
+plugins:
+    - search:
+          lang:
+              - en
+              - ja
+          separator: '[\s\-\.]'
+    # - offline
+    # - social
+    - git-revision-date-localized:
+          enabled: true
+          enable_creation_date: true
+          type: date
+          fallback_to_build_date: true
+copyright: >
+    Copyright &copy; 2022 - 2024 hangjinlei –
+    <a href="#__consent">Change cookie settings</a>
+
+markdown_extensions:
+    - pymdownx.highlight:
+          anchor_linenums: true
+          use_pygments: true
+          auto_title: true
+          linenums: true
+          linenums_style: pymdownx-inline
+    - pymdownx.inlinehilite
+    - pymdownx.keys
+    - pymdownx.smartsymbols
+    - pymdownx.details
+    - pymdownx.emoji:
+          emoji_index: !!python/name:materialx.emoji.twemoji
+          emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.snippets
+    - pymdownx.superfences:
+          custom_fences:
+              - name: mermaid
+                class: mermaid
+                format: !!python/name:pymdownx.superfences.fence_code_format
