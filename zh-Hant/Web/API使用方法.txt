@@ -1,0 +1,55 @@
+﻿中国大陆镜像：--registry=https://registry.npm.taobao.org
+
+node --version
+npm install express -g // 安装express // ※
+npm install express-generator -g // 安装express-generator // ※
+
+// npm root -g // 查看npm安装位置
+// express -h // express help
+
+express myapi // 创建项目
+express --no-view myapi // 不使用模板创建项目 // ※
+     > cd myapi // ※
+     > npm install // ※
+     > SET DEBUG=myapi:* & npm start // ※
+
+// npm start
+
+npm install nodemon -g // 安装自动刷新模块 // ※
+nodemon .bin/www // 启动 // ※
+
+启动mysql服务
+查看mysql服务，确认已启动
+
+// 登录mysql
+mysql -uroot -p
+mysql -uroot -proot
+
+// Navicat // 连接mysql
+
+npm install mysql // 安装mysql模块 // ※
+npm install mssql // 安装MSsql模块 // ※
+// https://www.cnblogs.com/cyfhykx/p/6224078.html
+
+
+// user.js
+router.get('/a', function(req, res, next) {
+    var connection = mysql.createConnection({
+        host: 'localhost',
+        port: '3306',
+        user: 'root',
+        password: 'root',
+        database: 'myapi',
+    });
+    connection.connect();
+    var sql = 'select rid, title, name from tb_goods';
+    connection.query(sql, function(err, resulset, filed) {
+        // console.log(resulset);
+        var data = { "code": 0, "data": {}, "msg": "success" };
+        res.json(resulset);
+    });
+    connection.end();
+});
+
+
+
