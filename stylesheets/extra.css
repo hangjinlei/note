@@ -1,0 +1,24 @@
+@font-face {
+    /* https://github.com/microsoft/cascadia-code */
+    font-family: "Cascadia Mono";
+    src: "./CascadiaMono.ttf";
+}
+
+[data-md-color-scheme="auto"] {
+    --md-primary-fg-color: #464feb;
+    --md-primary-fg-color--light: #0078d4;
+    --md-primary-fg-color--dark: #0078d4;
+}
+
+[data-md-color-scheme="light"] {
+    --md-primary-fg-color: #464feb;
+    --md-primary-fg-color--light: #0078d4;
+    --md-primary-fg-color--dark: #0078d4;
+}
+
+:root {
+    --md-primary-fg-color: #464feb;
+    --md-primary-fg-color--light: #0078d4;
+    --md-primary-fg-color--dark: #0078d4;
+    --md-code-font: "../assets/Cascadia Mono";
+}
