@@ -88,3 +88,33 @@ ControllerBase 类中已经有 HttpContext 属性, 若需要在自定义 Service
 
  </Project>
 ```
+
+## ASP.NET Core with Material Web
+
+[Quick start](https://material-web.dev/about/quick-start/)
+
+https://stackoverflow.com/questions/79279047/why-does-asp-net-core-9-strip-out-importmap
+
+```cshtml
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+@{
+	var data = new Microsoft.AspNetCore.Components.ImportMapDefinition(
+		new Dictionary<string, string>
+		{
+			{ "@material/web/", "https://esm.run/@material/web/" },
+		}, null, null);
+}
+<script type="importmap" asp-importmap="@data">
+	{
+	  "imports": {
+		"@@material/web/": "https://esm.run/@@material/web/"
+	  }
+	}
+</script>
+<script type="module">
+	import '@@material/web/all.js';
+	import {styles as typescaleStyles} from '@@material/web/typography/md-typescale-styles.js';
+
+	document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+</script>
+```
